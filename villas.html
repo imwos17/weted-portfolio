@@ -81,10 +81,10 @@
   /* GALLERY */
   .gallery-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:44px}
   .gallery-head .count{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-  .gallery{column-count:3;column-gap:18px}
-  @media(max-width:900px){.gallery{column-count:2}}
-  @media(max-width:560px){.gallery{column-count:1}}
-  .film{position:relative;display:inline-block;width:100%;margin:0 0 18px;break-inside:avoid;
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}
+  @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.gallery{grid-template-columns:1fr}}
+  .film{position:relative;display:block;width:100%;margin:0;
     border-radius:6px;overflow:hidden;border:1px solid var(--line);background:#000;line-height:0;transition:.3s}
   .film:hover{border-color:rgba(200,168,106,.55);transform:translateY(-3px)}
   .film video{width:100%;height:auto;display:block}
@@ -175,15 +175,17 @@
     </div>
     <div class="gallery">
       <div class="film reveal"><video src="villas_videos/v25.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="film reveal"><video src="villas_videos/v33.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="film reveal"><video src="villas_videos/v36.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v29.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="film reveal"><video src="villas_videos/v35.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="film reveal"><video src="villas_videos/v02.mp4" controls playsinline preload="metadata"></video></div>
+      <div class="film reveal"><video src="villas_videos/v33.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v01.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v17.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v13.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v28.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v04.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v11.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="film reveal"><video src="villas_videos/v36.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v22.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v30.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v03.mp4" controls playsinline preload="metadata"></video></div>
@@ -193,7 +195,6 @@
       <div class="film reveal"><video src="villas_videos/v12.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v06.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v23.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="film reveal"><video src="villas_videos/v02.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v27.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v16.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v26.mp4" controls playsinline preload="metadata"></video></div>
@@ -204,7 +205,6 @@
       <div class="film reveal"><video src="villas_videos/v31.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v32.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v34.mp4" controls playsinline preload="metadata"></video></div>
-      <div class="film reveal"><video src="villas_videos/v35.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v21.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v14.mp4" controls playsinline preload="metadata"></video></div>
       <div class="film reveal"><video src="villas_videos/v20.mp4" controls playsinline preload="metadata"></video></div>
